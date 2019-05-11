@@ -1,4 +1,5 @@
-﻿using System;
+﻿using main.Frm;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,9 @@ namespace main
         private void button1_Click(object sender, EventArgs e)
         {
             //TODO 登录
-
+            Main main = new Main();
+            main.ShowDialog();
+            this.Close();
         }
     }
 }
