@@ -19,5 +19,10 @@ namespace main.Bll
         {
             return dal.Getroom(fjlx);
         }
+
+        public DataTable GetroominfoGetroominfowithkhbh(string kfbh)
+        {
+            return dal.Getroominfowithkhbh(kfbh);
+        }
     }
 }
