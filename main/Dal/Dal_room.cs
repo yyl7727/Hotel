@@ -18,12 +18,29 @@ namespace main.Dal
         {
             return SQLHelper.GetDataSet("Getroomtype", CommandType.StoredProcedure, null);
         }
+        /// <summary>
+        /// 获取某一房间类型的所有房间列表
+        /// </summary>
+        /// <param name="fjlx"></param>
+        /// <returns></returns>
         public DataTable Getroom(string fjlx)
         {
             MySqlParameter[] parameters = {
                    new MySqlParameter("@lx",fjlx)
                                          };
-            return SQLHelper.GetDataSet("Getroom", CommandType.StoredProcedure, parameters);
+            return SQLHelper.GetDataSet("Getroomlist", CommandType.StoredProcedure, parameters);
+        }
+        /// <summary>
+        /// 通过房间编号获取房间信息
+        /// </summary>
+        /// <param name="kfbh"></param>
+        /// <returns></returns>
+        public DataTable Getroominfowithkhbh(string kfbh)
+        {
+            MySqlParameter[] parameters = {
+                   new MySqlParameter("@roomid",kfbh)
+                                         };
+            return SQLHelper.GetDataSet("Getroominfo", CommandType.StoredProcedure, parameters);
         }
     }
 }
