@@ -1,4 +1,5 @@
-﻿using main.Tool;
+﻿using main.Model;
+using main.Tool;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -35,12 +36,12 @@ namespace main.Dal
         /// </summary>
         /// <param name="kfbh"></param>
         /// <returns></returns>
-        public DataTable Getroominfowithkhbh(string kfbh)
+        public MySqlDataReader Getroominfowithkhbh(string kfbh)
         {
             MySqlParameter[] parameters = {
                    new MySqlParameter("@roomid",kfbh)
                                          };
-            return SQLHelper.GetDataSet("Getroominfo", CommandType.StoredProcedure, parameters);
+            return SQLHelper.ExecuteReader("Getroominfo", CommandType.StoredProcedure, parameters);
         }
     }
 }

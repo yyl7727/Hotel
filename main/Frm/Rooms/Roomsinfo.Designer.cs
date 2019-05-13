@@ -39,6 +39,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_roomid = new System.Windows.Forms.Label();
+            this.lb_kflx = new System.Windows.Forms.Label();
+            this.lb_khxm = new System.Windows.Forms.Label();
+            this.lb_lxdh = new System.Windows.Forms.Label();
+            this.lb_ldsj = new System.Windows.Forms.Label();
+            this.lb_rksj = new System.Windows.Forms.Label();
+            this.lb_rzyj = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
@@ -142,11 +149,81 @@
             this.lb_roomid.TabIndex = 20;
             this.lb_roomid.Text = "label10";
             // 
+            // lb_kflx
+            // 
+            this.lb_kflx.AutoSize = true;
+            this.lb_kflx.Location = new System.Drawing.Point(116, 104);
+            this.lb_kflx.Name = "lb_kflx";
+            this.lb_kflx.Size = new System.Drawing.Size(47, 12);
+            this.lb_kflx.TabIndex = 20;
+            this.lb_kflx.Text = "label10";
+            // 
+            // lb_khxm
+            // 
+            this.lb_khxm.AutoSize = true;
+            this.lb_khxm.Location = new System.Drawing.Point(116, 146);
+            this.lb_khxm.Name = "lb_khxm";
+            this.lb_khxm.Size = new System.Drawing.Size(47, 12);
+            this.lb_khxm.TabIndex = 20;
+            this.lb_khxm.Text = "label10";
+            // 
+            // lb_lxdh
+            // 
+            this.lb_lxdh.AutoSize = true;
+            this.lb_lxdh.Location = new System.Drawing.Point(116, 192);
+            this.lb_lxdh.Name = "lb_lxdh";
+            this.lb_lxdh.Size = new System.Drawing.Size(47, 12);
+            this.lb_lxdh.TabIndex = 20;
+            this.lb_lxdh.Text = "label10";
+            // 
+            // lb_ldsj
+            // 
+            this.lb_ldsj.AutoSize = true;
+            this.lb_ldsj.Location = new System.Drawing.Point(452, 192);
+            this.lb_ldsj.Name = "lb_ldsj";
+            this.lb_ldsj.Size = new System.Drawing.Size(47, 12);
+            this.lb_ldsj.TabIndex = 20;
+            this.lb_ldsj.Text = "label10";
+            // 
+            // lb_rksj
+            // 
+            this.lb_rksj.AutoSize = true;
+            this.lb_rksj.Location = new System.Drawing.Point(452, 146);
+            this.lb_rksj.Name = "lb_rksj";
+            this.lb_rksj.Size = new System.Drawing.Size(47, 12);
+            this.lb_rksj.TabIndex = 20;
+            this.lb_rksj.Text = "label10";
+            // 
+            // lb_rzyj
+            // 
+            this.lb_rzyj.AutoSize = true;
+            this.lb_rzyj.Location = new System.Drawing.Point(452, 104);
+            this.lb_rzyj.Name = "lb_rzyj";
+            this.lb_rzyj.Size = new System.Drawing.Size(47, 12);
+            this.lb_rzyj.TabIndex = 20;
+            this.lb_rzyj.Text = "label10";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(452, 59);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(47, 12);
+            this.label16.TabIndex = 20;
+            this.label16.Text = "label10";
+            // 
             // Roomsinfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 411);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.lb_rzyj);
+            this.Controls.Add(this.lb_rksj);
+            this.Controls.Add(this.lb_ldsj);
+            this.Controls.Add(this.lb_lxdh);
+            this.Controls.Add(this.lb_khxm);
+            this.Controls.Add(this.lb_kflx);
             this.Controls.Add(this.lb_roomid);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label9);
@@ -181,5 +258,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lb_roomid;
+        private System.Windows.Forms.Label lb_kflx;
+        private System.Windows.Forms.Label lb_khxm;
+        private System.Windows.Forms.Label lb_lxdh;
+        private System.Windows.Forms.Label lb_ldsj;
+        private System.Windows.Forms.Label lb_rksj;
+        private System.Windows.Forms.Label lb_rzyj;
+        private System.Windows.Forms.Label label16;
     }
 }
